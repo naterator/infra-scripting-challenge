@@ -48,3 +48,5 @@ deployments_to_delete_2 = filter(lambda d: d < thirty_days_ago, deployments_unso
 deployments_to_delete_comb = set(deployments_to_delete_1 + deployments_to_delete_2)
 deployments_to_delete = [i for i in deployments_to_delete_comb if i not in deployments_to_keep]
 ```
+
+_NOTE: The aforementioned code has not been tested._
